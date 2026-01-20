@@ -1,0 +1,46 @@
+body{
+  font-family: Arial;
+  padding: 20px;
+}
+
+h1{
+  text-align: center;
+  color: #0b7285;
+}
+
+h2{
+  margin-top: 30px;
+  color: #333;
+}
+
+img{
+  border: 2px solid #000;
+}
+
+.friends{
+  list-style-type: circle;
+}
+
+table{
+  border-collapse: collapse;
+  width: 50%;
+}
+
+table, th, td{
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.center-btn{
+  text-align: center;
+  margin: 20px;
+}
+
+button{
+  padding: 8px 15px;
+  background: #0b7285;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
