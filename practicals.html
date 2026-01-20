@@ -23,50 +23,28 @@
     <a href="contact.html">Contact</a>----------⨁
 </nav>
 
-  <script>
-    /* For Question 5 */
-    function getNames(){
-      document.getElementById("fname").value = prompt("Enter First Name");
-      document.getElementById("lname").value = prompt("Enter Last Name");
-    }
-
-    /* For Question 6 */
-    function showMsg(msg){
-      window.status = msg;
-    }
-
-    /* For Question 7 */
-    function checkPassword(){
-      var pwd = document.getElementById("pass").value;
-      if(pwd === "admin"){
-        window.open("index.html");
-      } else {
-        alert("Wrong Password");
-      }
-    }
-  </script>
 </head>
 
-<body onload="getNames()">
 
+<section id = "practicals">
 <h1>WEB TECHNOLOGY PRACTICAL</h1>
 
 <!-- Q1 IMAGE -->
-<h2>1. Image with ALT</h2>
-<img src="images/profile.jpg" alt="My Profile Image" width="300" height="300">
+<h2>1. Image with ALT</h2><br>
+<img src="hero.jpeg" alt="My Profile Image" width="300" height="300"><br>
 
 <!-- Q2 FRIEND LIST -->
-<h2>2. Friends List</h2>
+<h2>2. Friends List</h2><br>
 <ul class="friends">
   <li>Rahul</li>
   <li>Aman</li>
   <li>Rohit</li>
   <li>Sachin</li>
-</ul>
+</ul><br>
 
 <!-- Q4 MARKS TABLE -->
-<h2>4. Marks Table</h2>
-<table>
+<h2>4. Marks Table</h2><br>
+<table border = "1">
   <tr>
     <th>Subject</th>
     <th>Marks</th>
@@ -75,25 +53,24 @@
   <tr><td>Physics</td><td>72</td></tr>
   <tr><td>Python</td><td>85</td></tr>
   <tr><td>Web Tech</td><td>88</td></tr>
-</table>
+</table><br>
 
 <!-- Q5 PROMPT FORM -->
 <h2>5. Form (Prompt Input)</h2>
-<form>
+<form><br>
   First Name:
   <input type="text" id="fname" readonly><br><br>
   Last Name:
   <input type="text" id="lname" readonly>
-</form>
+</form><br>
 
 <!-- Q6 BUTTON CENTER -->
-<h2>6. Mouse Event Button</h2>
+<h2>6. Mouse Event Button</h2><br>
 <div class="center-btn">
-  <button onmouseover="showMsg('Mouse Over Button')"
-          onmouseout="showMsg('Mouse Out Button')">
+  <button> 
     Hover Me
   </button>
-</div>
+</div><br>
 
 <!-- Q7 LOGIN -->
 <h2>7. Login Page</h2>
@@ -101,7 +78,11 @@ Username:
 <input type="text"><br><br>
 Password:
 <input type="password" id="pass"><br><br>
-<button onclick="checkPassword()">Login</button>
+<button>Login</button>
+
+
+</section>
+
 
 </body>
 </html>
