@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Aditya Panchal | Achievement</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <header class="header">
+    <h1>Welcome to My Website</h1>
+    <p class="tagline">AI-ML Student | Web Development Learner</p>
+</header>
+
+     <nav class="navbar">
+    ⨁----------<a href="index.html">Home</a>|
+    <a href="About.html">About</a>|
+    <a href="hobbies.html">Hobbies</a>|
+    <a href="Achievement.html">Achievement</a>|
+    <a href="practicals.html">Practicals</a>|
+    <a href="contact.html">Contact</a>----------⨁
+</nav>
+
+  <script>
+    /* For Question 5 */
+    function getNames(){
+      document.getElementById("fname").value = prompt("Enter First Name");
+      document.getElementById("lname").value = prompt("Enter Last Name");
+    }
+
+    /* For Question 6 */
+    function showMsg(msg){
+      window.status = msg;
+    }
+
+    /* For Question 7 */
+    function checkPassword(){
+      var pwd = document.getElementById("pass").value;
+      if(pwd === "admin"){
+        window.open("index.html");
+      } else {
+        alert("Wrong Password");
+      }
+    }
+  </script>
+</head>
+
+<body onload="getNames()">
+
+<h1>WEB TECHNOLOGY PRACTICAL</h1>
+
+<!-- Q1 IMAGE -->
+<h2>1. Image with ALT</h2>
+<img src="images/profile.jpg" alt="My Profile Image" width="300" height="300">
+
+<!-- Q2 FRIEND LIST -->
+<h2>2. Friends List</h2>
+<ul class="friends">
+  <li>Rahul</li>
+  <li>Aman</li>
+  <li>Rohit</li>
+  <li>Sachin</li>
+</ul>
+
+<!-- Q4 MARKS TABLE -->
+<h2>4. Marks Table</h2>
+<table>
+  <tr>
+    <th>Subject</th>
+    <th>Marks</th>
+  </tr>
+  <tr><td>Maths</td><td>78</td></tr>
+  <tr><td>Physics</td><td>72</td></tr>
+  <tr><td>Python</td><td>85</td></tr>
+  <tr><td>Web Tech</td><td>88</td></tr>
+</table>
+
+<!-- Q5 PROMPT FORM -->
+<h2>5. Form (Prompt Input)</h2>
+<form>
+  First Name:
+  <input type="text" id="fname" readonly><br><br>
+  Last Name:
+  <input type="text" id="lname" readonly>
+</form>
+
+<!-- Q6 BUTTON CENTER -->
+<h2>6. Mouse Event Button</h2>
+<div class="center-btn">
+  <button onmouseover="showMsg('Mouse Over Button')"
+          onmouseout="showMsg('Mouse Out Button')">
+    Hover Me
+  </button>
+</div>
+
+<!-- Q7 LOGIN -->
+<h2>7. Login Page</h2>
+Username:
+<input type="text"><br><br>
+Password:
+<input type="password" id="pass"><br><br>
+<button onclick="checkPassword()">Login</button>
+
+</body>
+</html>
