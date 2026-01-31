@@ -75,7 +75,7 @@ body{
 button{
     padding: 10px 20px;
     background: #0b7285;
-    color: rgb(236, 232, 232);
+    color: black;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -314,3 +314,4 @@ body {
   color: #e6eaeb;
 
 }
+
